@@ -1,32 +1,52 @@
-# Rosé Pine for Rex
+<p align="center">
+    <img src="https://github.com/rose-pine/rose-pine-theme/raw/main/assets/icon.png" width="80" />
+    <h2 align="center">Rosé Pine for Rex</h2>
+</p>
 
-All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
-
-Variants: `rose-pine`, `rose-pine-moon`, `rose-pine-dawn`.
+<p align="center">All natural pine, faux fur and a bit of soho vibes for the classy minimalist</p>
 
 ## Usage
 
-Copy a file from `dist/` next to your Rex config, then apply it from an event
-handler (`rex.block.call` fails at config load):
+1. Download a variant:
 
-```sh
-cp dist/rose-pine-moon.lua ~/.config/rex/
-```
+   ```sh
+   # Rosé Pine
+   curl -fsSL https://raw.githubusercontent.com/sergot/rose-pine-rex/main/dist/rose-pine -o ~/Downloads/rose-pine
 
-```lua
--- ~/.config/rex/init.lua
-local theme = require("rose-pine-moon")
--- inside a terminal-created event handler (see Rex's events reference):
--- rex.block.call("com.superlogical.terminal", "set_theme", theme)
-```
+   # Rosé Pine Moon
+   curl -fsSL https://raw.githubusercontent.com/sergot/rose-pine-rex/main/dist/rose-pine-moon -o ~/Downloads/rose-pine-moon
 
-> The `set_theme` argument keys are not documented yet. Run
-> `rex api describe com.superlogical.terminal.set_theme` and adjust
-> `template/rose-pine.lua` if they differ.
+   # Rosé Pine Dawn
+   curl -fsSL https://raw.githubusercontent.com/sergot/rose-pine-rex/main/dist/rose-pine-dawn -o ~/Downloads/rose-pine-dawn
+   ```
+
+2. Open Rex
+3. Under **Settings**, choose **Import Theme File** and pick the downloaded file. Rex imports the theme and selects it.
+
+> Rex doesn't support setting the theme from `init.lua` yet. A terminal's
+> colors follow the client that owns its block, so the app's theme setting is
+> the one that sticks. If Rex adds a config-driven way to set it, it will be
+> documented here.
+
+## Gallery
+
+### Rosé Pine
+
+<!-- TODO: screenshot -->
+
+### Rosé Pine Moon
+
+<!-- TODO: screenshot -->
+
+### Rosé Pine Dawn
+
+<!-- TODO: screenshot -->
+
+## Thanks to
+
+- [Filip Sergot](https://github.com/sergot)
 
 ## Contributing
-
-Edit `template/`, then regenerate `dist/`.
 
 <!-- BLOOM_BUILD_START -->
 This theme was built using [bloom](https://github.com/rose-pine/rose-pine-bloom):
