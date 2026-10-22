@@ -7,17 +7,17 @@
 
 ## Usage
 
-1. Download a variant:
+1. Download a variant from [`dist`](./dist), or with curl:
 
    ```sh
    # Rosé Pine
-   curl -fsSL https://raw.githubusercontent.com/sergot/rose-pine-rex/main/dist/rose-pine -o ~/Downloads/rose-pine
+   curl -fsSLO https://raw.githubusercontent.com/sergot/rose-pine-rex/main/dist/rose-pine
 
    # Rosé Pine Moon
-   curl -fsSL https://raw.githubusercontent.com/sergot/rose-pine-rex/main/dist/rose-pine-moon -o ~/Downloads/rose-pine-moon
+   curl -fsSLO https://raw.githubusercontent.com/sergot/rose-pine-rex/main/dist/rose-pine-moon
 
    # Rosé Pine Dawn
-   curl -fsSL https://raw.githubusercontent.com/sergot/rose-pine-rex/main/dist/rose-pine-dawn -o ~/Downloads/rose-pine-dawn
+   curl -fsSLO https://raw.githubusercontent.com/sergot/rose-pine-rex/main/dist/rose-pine-dawn
    ```
 
 2. Open Rex
@@ -32,15 +32,15 @@
 
 ### Rosé Pine
 
-<!-- TODO: screenshot -->
+<img width="256" alt="Rosé Pine with Rex" src="./assets/rose-pine.png" />
 
 ### Rosé Pine Moon
 
-<!-- TODO: screenshot -->
+<img width="256" alt="Rosé Pine Moon with Rex" src="./assets/rose-pine-moon.png" />
 
 ### Rosé Pine Dawn
 
-<!-- TODO: screenshot -->
+<img width="256" alt="Rosé Pine Dawn with Rex" src="./assets/rose-pine-dawn.png" />
 
 ## Thanks to
 
